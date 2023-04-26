@@ -1,0 +1,15 @@
+<meta charser="UTF-8">
+<script>
+    /*Peça para o usuário informar o seu salário-base. Calcule e apresente o salário líquido ao final do programa, considerando que o funcionário recebe gratificação de R% 200,00 (livre de imposto) e lhe é descontado 10% sobre o salário-base.*/
+
+    //Entrada
+    const salario= prompt("informe o seu salario-base")
+
+    //Processamento
+    const liquido= Number(salario * 0.10) 
+    const liquido2= Number(salario)  + 200 - Number(liquido) 
+
+    //saida
+    document.write(`o salario liquido é de R$ ${liquido2}`)
+
+</script>

@@ -1,0 +1,18 @@
+<meta charset="UTF-8">
+<script>
+    /*Considere que uma revendedora paga a seus funcionários um salário fixo por mês, mais R$ 225,00 para cada carro vendido e, além disso, 5% do valor das vendas efetuadas por ele. Pergunte ao usuário qual o seu salário fixo, quantos carros foram vendidos e o valor total das vendas. Calcule e apresente qual a remuneração final do vendedor, funcionário da revendedora. Também apresente qual será o salário após o desconto de 20% de impostos.*/
+
+    //Entrada
+    const fixo=prompt("qual o seu salario fixo?")
+    const carros= prompt("quantos carros foram vendidos?")
+    const vendas= prompt("qual foi o valor total das vendas?")
+
+    //Processamento
+    const totalvendas= Number(fixo) + Number(225 * carros) + Number(vendas * 0.05)
+    const impostos= Number(totalvendas) - Number(totalvendas * 0.20)
+
+    //saida
+    document.write(`a renumeração final é de R$ ${totalvendas} e o salário após a o desconto é de R$ ${impostos}`)
+
+
+</script>

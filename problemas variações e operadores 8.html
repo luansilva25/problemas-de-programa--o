@@ -1,0 +1,15 @@
+<meta charset="UTF-8">
+<script>
+    /*Peça para o aluno informar as notas que obteve no PRIMEIRO TRIMESTRE e calcule a média do aluno no primeiro trimestre. Considere que a média é ponderada, e o peso das notas será 2 (dois), 3 (três) e 5 (cinco), respectivamente. Ao final do programa apresente a média trimestral que o aluno obteve.*/
+
+    //Entrada
+    const nota1= prompt("informe a nota 1")
+    const nota2= prompt("informe a nota 2")
+    const nota3= prompt("informe a nota 3")
+
+    //processamento
+    const media= (Number(nota1*2) + Number(nota2*3) + Number(nota3*5)) /10
+
+    //saida
+    document.write(`a média do trimestre foi de ${media.toFixed(2).replace("." ,",")}`)
+</script>

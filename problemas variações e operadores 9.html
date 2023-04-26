@@ -1,0 +1,14 @@
+<meta charset="UTF-8">
+<script>
+    /*Peça para o usuário informar o preço original do produto e o preço do produto durante a campanha promocional. Calcule qual foi a porcentagem de desconto dada para o produto na promoção.*/
+
+    //entrada
+    const original= prompt("informe o preço original do produto")
+    const campanha= prompt("informe o preço do produto durante a campanha")
+
+    //processamento
+    const desconto= ((Number(original) - (campanha)) * 100) / (original)
+
+    //saida
+    document.write(`a porcentagem dada foi de ${desconto}% `)
+</script>

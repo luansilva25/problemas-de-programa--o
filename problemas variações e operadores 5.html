@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+<script>
+    /*Considere que uma pessoa está realizando uma reforma na sua casa. O pedreiro cobra R$ 30,00 a hora de trabalho e o pintor cobra R$ 25,00. Peça para o usuário informar quantas horas foram trabalhadas pelo pedreiro e quantas horas foram trabalhadas pelo pintor. Apresente, ao final do programa, as seguintes informações:
+
+Quanto deverá ser pago para o pedreiro
+Quanto deverá ser pago para o pintor
+Quanto foi o custo total da obra, considerando os dois profissionais envolvidos*/
+
+//Entrada
+const pedreiro= prompt("informe quantas horas foram trabalhadas pelo pedreiro")
+const pintor= prompt("informe quantas horas trabalhadas pelo pintor")
+
+//processamento
+const pagope= (pedreiro) * 30
+const pagopi= (pintor) * 25
+const total= (pedreiro*30) + (pintor*25)
+
+//saida
+document.write(`devera ser pago para o pedreiro R$ ${pagope}`)
+document.write(`devera ser pago para o pintor R$ ${pagopi}`)
+document.write(`o custo total da obra é de R$ ${total}`)
+</script>

@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+<script>
+    /*Peça para o usuário informar quanto tempo gastou durante a viagem, quantos litros de combustível foram consumidos, o preço do litro de combustível e qual a quilometragem total percorrida. Calcule e apresente os seguintes dados:
+
+Velocidade média da viagem em quilômetros por hora
+Consumo médio de combustível do veículo
+Custo total do combustível
+Custo da viagem por quilômetro percorrido*/
+
+//Entrada
+const tempo= prompt("informe quanto tempo gastou durante a viagem")
+const litros= prompt("informe quantos litros  combustivel foram consumido")
+const preco= prompt("informe o preço do litro do combustivel")
+const quilometragem= prompt("informe o total da quilometragem percorrida")
+
+//processamento
+const velocidademedia= Number(quilometragem) / (tempo)
+const consumomedio= Number(quilometragem) / (litros)
+const custototal= (preco) * (litros)
+const quilometrototal= (custototal) / (quilometragem)
+
+//saida
+document.write(`A velocidade media é de ${velocidademedia} km/h, O consumo médio é de ${consumomedio} litros, o custo total do combustivel é de R$ ${custototal}, o custo da viagem por km percorrido é de ${quilometrototal}`)
+</script>
